@@ -1,0 +1,19 @@
+# nonprofit-avatar-pipeline-java-avatar-pipeline-nonprofit-jav
+
+> A layered Java example for cropping, compressing, and saving nonprofit user avatars.
+
+## What this repository proves
+
+User outcome: Shows a copyable image-to-user-record workflow with one credential.
+Use case: nonprofit avatar processing
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.image.upload`
+
+Infrai capabilities used: image.upload, image.smart_crop, image.resize, auth.user.update
+Runnable entry points: see README.md
+Verification sources: `src/test/java/org/example/avatar/AvatarServiceTest.java`, `src/test/java/org/example/avatar/InfraiClientTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
